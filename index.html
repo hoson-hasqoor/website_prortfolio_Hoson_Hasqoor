@@ -28,6 +28,8 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Loading Screen -->
+    <div class="loading"></div>
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
@@ -43,6 +45,7 @@
                 <a href="#qualification" class="nav-item nav-link">Quality</a>
                 <a href="#skill" class="nav-item nav-link">Skill</a>
                 <a href="#service" class="nav-item nav-link">Service</a>
+                <a href="#projects" class="nav-item nav-link">Projects</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
@@ -64,13 +67,18 @@
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Computer Science , Front End Developer</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="" class="btn btn-white mr-4">Download CV</a>
-                        
-                        <a href="" class="btn btn-blue d-none d-sm-block">Play Video</a>
+                        <a href="https://github.com/Hoson02y" target="_blank" class="btn btn-white mr-4">
+                            <i class="fab fa-github mr-2"></i>GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/hoson-hasqoor-b7788225b/" target="_blank" class="btn btn-blue d-none d-sm-block">
+                            <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6 px-8 pl-lg-0 pb-5 pb-lg-4 about-img">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/hoson.png" alt="img hoson" width="20" >
+                    <div class="image-frame">
+                        <img class="img-fluid w-100 rounded-circle shadow-sm neon-glow" src="img/hoson.png" alt="Hoson Hasqoor" width="20">
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,7 +95,9 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/hoson.png" alt="photo hoson">
+                    <div class="image-frame">
+                        <img class="img-fluid rounded w-100 neon-glow" src="img/hoson.png" alt="Hoson Hasqoor">
+                    </div>
                 </div>
                 <div class="col-lg-7">
                     <h3 class="mb-4">Bachelor of Computer Sciences</h3>
@@ -322,61 +332,103 @@
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="Tronix Web Application">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
+                            <div class="text-center">
+                                <h5 class="text-white mb-2">Tronix E-Commerce</h5>
+                                <p class="text-white mb-3">Web Application for buying and selling electronic devices</p>
+                                <a href="https://github.com/Hoson02y" target="_blank" class="btn btn-light btn-sm mr-2">
+                                    <i class="fab fa-github mr-1"></i>GitHub
+                                </a>
+                                <a href="img/portfolio-1.jpg" data-lightbox="portfolio" class="btn btn-light btn-sm">
+                                    <i class="fa fa-eye mr-1"></i>View
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="Candle Store Blog">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
+                            <div class="text-center">
+                                <h5 class="text-white mb-2">Candle Store Blog</h5>
+                                <p class="text-white mb-3">Blog for handmade cupcake-shaped candles</p>
+                                <a href="https://candle-store.blogspot.com" target="_blank" class="btn btn-light btn-sm mr-2">
+                                    <i class="fa fa-external-link-alt mr-1"></i>Visit Blog
+                                </a>
+                                <a href="img/portfolio-2.jpg" data-lightbox="portfolio" class="btn btn-light btn-sm">
+                                    <i class="fa fa-eye mr-1"></i>View
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="3D Modeling Blender">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
+                            <div class="text-center">
+                                <h5 class="text-white mb-2">3D Modeling Project</h5>
+                                <p class="text-white mb-3">3D models using Blender with advanced techniques</p>
+                                <a href="https://github.com/Hoson02y" target="_blank" class="btn btn-light btn-sm mr-2">
+                                    <i class="fab fa-github mr-1"></i>GitHub
+                                </a>
+                                <a href="img/portfolio-3.jpg" data-lightbox="portfolio" class="btn btn-light btn-sm">
+                                    <i class="fa fa-eye mr-1"></i>View
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="Web Development">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
+                            <div class="text-center">
+                                <h5 class="text-white mb-2">Web Development</h5>
+                                <p class="text-white mb-3">Full-stack web applications</p>
+                                <a href="https://github.com/Hoson02y" target="_blank" class="btn btn-light btn-sm mr-2">
+                                    <i class="fab fa-github mr-1"></i>GitHub
+                                </a>
+                                <a href="img/portfolio-4.jpg" data-lightbox="portfolio" class="btn btn-light btn-sm">
+                                    <i class="fa fa-eye mr-1"></i>View
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="Database Design">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
+                            <div class="text-center">
+                                <h5 class="text-white mb-2">Database Design</h5>
+                                <p class="text-white mb-3">MySQL and MongoDB solutions</p>
+                                <a href="https://github.com/Hoson02y" target="_blank" class="btn btn-light btn-sm mr-2">
+                                    <i class="fab fa-github mr-1"></i>GitHub
+                                </a>
+                                <a href="img/portfolio-5.jpg" data-lightbox="portfolio" class="btn btn-light btn-sm">
+                                    <i class="fa fa-eye mr-1"></i>View
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="Programming Projects">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
+                            <div class="text-center">
+                                <h5 class="text-white mb-2">Programming Projects</h5>
+                                <p class="text-white mb-3">Java, C, Python, and R projects</p>
+                                <a href="https://github.com/Hoson02y" target="_blank" class="btn btn-light btn-sm mr-2">
+                                    <i class="fab fa-github mr-1"></i>GitHub
+                                </a>
+                                <a href="img/portfolio-6.jpg" data-lightbox="portfolio" class="btn btn-light btn-sm">
+                                    <i class="fa fa-eye mr-1"></i>View
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -385,8 +437,99 @@
     </div>
     <!-- Portfolio End -->
 
+    <!-- Projects Section Start -->
+    <div class="container-fluid py-5" id="projects">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 project-card">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Tronix Web Application</h4>
+                            <h6 class="text-muted">E-Commerce Platform | Graduation Project 2024</h6>
+                            <p class="card-text">A comprehensive web application for buying and selling electronic devices. Features include user registration, login systems for customers and suppliers, MySQL database management, and Java backend implementation.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge badge-primary mr-2">HTML/CSS</span>
+                                <span class="badge badge-success mr-2">PHP</span>
+                                <span class="badge badge-info mr-2">Java</span>
+                                <span class="badge badge-warning mr-2">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Hoson02y" target="_blank" class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-github mr-1"></i>View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 project-card">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Candle Store Blog</h4>
+                            <h6 class="text-muted">Personal Project | 2024</h6>
+                            <p class="card-text">A visually appealing blog showcasing handmade cupcake-shaped candles. Features custom Blogger layout, product pages, shopping cart integration, and media embedding.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge badge-primary mr-2">Blogger</span>
+                                <span class="badge badge-success mr-2">HTML/CSS</span>
+                                <span class="badge badge-info mr-2">E-commerce</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://candle-store.blogspot.com" target="_blank" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa fa-external-link-alt mr-1"></i>Visit Blog
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 project-card">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">3D Modeling & Animation</h4>
+                            <h6 class="text-muted">Blender Project | COMP3351 2023</h6>
+                            <p class="card-text">Advanced 3D modeling using Blender with techniques including UV editing, sculpting, modifiers, and lighting effects. Created detailed 3D cup models and comparative analysis of 3D software.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge badge-primary mr-2">Blender</span>
+                                <span class="badge badge-success mr-2">3D Modeling</span>
+                                <span class="badge badge-info mr-2">Animation</span>
+                                <span class="badge badge-warning mr-2">UV Editing</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Hoson02y" target="_blank" class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-github mr-1"></i>View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 project-card">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Programming Portfolio</h4>
+                            <h6 class="text-muted">Various Projects | 2019-2025</h6>
+                            <p class="card-text">Collection of programming projects in multiple languages including Java, C, Python, R, and ASP.NET. Features algorithms, data structures, and problem-solving implementations.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge badge-primary mr-2">Java</span>
+                                <span class="badge badge-success mr-2">C</span>
+                                <span class="badge badge-info mr-2">Python</span>
+                                <span class="badge badge-warning mr-2">R</span>
+                                <span class="badge badge-secondary mr-2">ASP.NET</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Hoson02y" target="_blank" class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-github mr-1"></i>View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects Section End -->
 
- 
     <!-- Testimonial End -->
  
 
